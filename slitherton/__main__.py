@@ -18,8 +18,10 @@ async def ping(ctx):
     await ctx.send("PONG")
 
 
-# Register Cogs with bot (disabled for now as there are no cogs)
-# for cog in (ROOT_DIR / "cogs").glob("*.py"):
-#     bot.add_cog(f"cogs.{cog}")
+# Register Cogs with bot
+for cog in (ROOT_DIR / "cogs").glob("*.py"):
+    print(f"Found cog: 'cog.{cog.name[:-3]}'")
+    bot.load_extension(f"slitherton.cogs.{cog.name[:-3]}")
+
 
 bot.run(config("DISCORD_BOT_KEY"))
