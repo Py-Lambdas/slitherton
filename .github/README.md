@@ -14,7 +14,7 @@ A discord bot for Py-Lambdas
 
 ## Maintainers
 
-[@Py-Lambdas/bot-maintainers](https://github.com/Py-Lambdas/bot-maintainers)
+[@Py-Lambdas/bot-maintainers](https://github.com/Py-Lambdas/teams/bot-maintainers)
 
 ## Contributing
 
